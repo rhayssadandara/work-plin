@@ -6,6 +6,7 @@
     list-style: none;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    cursor: default;
 }
 
 header{
@@ -17,6 +18,7 @@ header{
     background-image: url('../img/Ellipse\ 2.svg');
     background-repeat: no-repeat;
     background-position-x: right;
+    background-size: contain;
 }
 header nav{
     width: 40%;
@@ -29,6 +31,7 @@ header div{
 }
 header img{
     width: 18vw;
+    cursor: pointer;
 }
 header ul{
     display: flex;
@@ -39,6 +42,7 @@ header li{
     margin-right: 3vw;
     font-size: 1.8vw;
     font-weight: lighter;
+    cursor: pointer;
 }
 .main--section_intro{
     height: 100vh;
@@ -46,12 +50,22 @@ header li{
     align-items: center;
     justify-content: center;
 }
-.main--section_intro div{
+.intro--text{
     width: 50%;
     text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.intro--img{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.main--section_intro img{
+    width: 40vw;
 }
 .main--section_intro h1{
     width: 50%;
@@ -69,13 +83,21 @@ header li{
 span{
     color: #6C63FF;
 }
-.boxes{
+.main--form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main--form_boxes{
+    width: 90%;
     height: 60vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.input, .text{
+.form--input{
     width: 50%;
     height: 100%;
     display: flex;
@@ -83,21 +105,53 @@ span{
     align-items: center;
     justify-content: space-evenly;
 }
+.form--text{
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.form--input input{
+    width: 36vw;
+    height: 12vh;
+    border: 3px solid #6C63FF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+}
+.form--input input::placeholder{
+    font-size: 1.5vw;
+    font-weight: 700;
+    color: black;
+    padding-left: 2vw;
+}
 .submit{
-    height: 40vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 60vh;
+    margin-top: 20vh;
 }
-.box{
-    width: 50%;
+.submit button{
+    width: 36vw;
+    height: 12vh;
+    border-radius: 15px;
+    background-color: black;
+    color: #6C63FF;
+    font-size: 2.5vw;
+    font-weight: 700;
+}
+.form--text_box{
     border: solid black 2px;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); 
 }
-.box p{
-    padding:1vh 1vw;
+.form--text_box p{
+    font-size: 1.5vw;
+    font-weight: 700;
+    padding:3vh 1.5vw;
 }
 footer{
     width: 100%;
@@ -108,10 +162,45 @@ footer{
     align-items: center;
     justify-content: space-between;
 }
+footer ul{
+    margin-left: 5vw;
+}
+footer li{
+    margin-bottom: 1.5vh;
+    font-size: 2vw;
+    font-weight: 900;
+    cursor: pointer;
+}
 footer div{
+    width: 40%;
     height: 100%;
-    padding: 5vh 5vw;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+footer img{
+    width: 23vw;
+}
+@media (max-width:320px){
+    footer{
+        height: 80vh;
+        flex-direction: column-reverse;
+        justify-content: right;
+    }
+    footer div{
+        height: 20%;
+    }
+    footer img{
+        width: 75vw;
+        margin-top: 10vh;
+    }
+    footer li{
+        font-size: 10vw;
+        text-align: center;
+    }
+    footer ul{
+        margin-top: 10vh;
+        margin-left: 0;
+    }
 }
