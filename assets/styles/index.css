@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -239,10 +239,28 @@ footer img{
     }
     .main--section_intro h1{
         font-size: 10vw;
-        width: 80%;
-        padding-bottom: 5vh;
+        width: 90%;
+        padding: 0 5vh;
     }
     .intro--text{
         width: 100%;
+    }
+    header{
+        height: 50vh;
+        background-size: 35vh;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    header ul{
+        flex-direction: column;
+    }
+    header li{
+        font-size: 7vw;
+        font-weight: lighter;
+        padding-bottom: 2vh;
+    }
+    header img{
+        width: 60vw;
+        margin-top: 5vh;
     }
 }
