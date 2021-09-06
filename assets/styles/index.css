@@ -203,4 +203,23 @@ footer img{
         margin-top: 10vh;
         margin-left: 0;
     }
+    .submit{
+        margin-top: 0;
+        height: 40vh;
+
+    }
+    .submit button{
+        width: 70vw;
+        font-size: 8vw;
+    }
+    .form--text{
+        display: none;
+    }
+    .form--input input{
+        width:75vw ;
+    }
+    .form--input input::placeholder{
+        font-size: 5vw;
+        padding-left: 8vw;
+    }
 }
