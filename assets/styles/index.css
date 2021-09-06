@@ -222,4 +222,27 @@ footer img{
         font-size: 5vw;
         padding-left: 8vw;
     }
+    .plin{
+        height: 30vh;
+        font-size: 8vw;
+    }
+    .main--section_intro{
+        height: 60vh;
+        flex-direction: column-reverse;
+    }
+    .main--section_intro img{
+        width: 80vw;
+    }
+    .intro--img{
+        width: 100%;
+        justify-content: center;
+    }
+    .main--section_intro h1{
+        font-size: 10vw;
+        width: 80%;
+        padding-bottom: 5vh;
+    }
+    .intro--text{
+        width: 100%;
+    }
 }
