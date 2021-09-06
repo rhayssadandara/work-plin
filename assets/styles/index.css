@@ -182,7 +182,7 @@ footer div{
 footer img{
     width: 23vw;
 }
-@media (max-width:320px){
+@media (max-width:500px){
     footer{
         height: 80vh;
         flex-direction: column-reverse;
@@ -227,7 +227,7 @@ footer img{
         font-size: 8vw;
     }
     .main--section_intro{
-        height: 60vh;
+        height: 90vh;
         flex-direction: column-reverse;
     }
     .main--section_intro img{
@@ -239,20 +239,21 @@ footer img{
     }
     .main--section_intro h1{
         font-size: 10vw;
-        width: 90%;
-        padding: 0 5vh;
+        width: 80%;
+        margin-bottom: 5vh;
     }
     .intro--text{
         width: 100%;
     }
     header{
-        height: 50vh;
+        height: 60vh;
         background-size: 35vh;
         flex-direction: column;
         justify-content: space-around;
     }
     header ul{
         flex-direction: column;
+        margin-bottom: 2vh;
     }
     header li{
         font-size: 7vw;
